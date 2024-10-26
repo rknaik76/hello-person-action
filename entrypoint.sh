@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh -l
 
-# Fail immediately if any command exits with a non-zero status
-set -e
+echo "Hello $1"
+time=$(date)
+echo "time=$time" >> $GITHUB_OUTPUT
 
-# Read the name from input environment variable
-echo "Hello, ${INPUT_NAME}!"
+

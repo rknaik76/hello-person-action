@@ -1,0 +1,17 @@
+name: "Hello Person Action"
+description: "A simple GitHub Action that greets a person by name."
+author: "Startrek"
+
+inputs:
+  name:
+    description: "The name of the person to greet"
+    required: true
+    default: "Hulk"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "smile"
+  color: "blue"
